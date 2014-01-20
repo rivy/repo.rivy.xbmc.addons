@@ -1,0 +1,2 @@
+1.0.0
+	Initial commit: RIVY XBMC Addon Repository addon for XBMC
