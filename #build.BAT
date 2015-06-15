@@ -1,7 +1,8 @@
 @echo off
 @setlocal
 
-:: URLref: http://wiki.xbmc.org/index.php?title=Add-on_repositories
+:: URLref: http://kodi.wiki/view/Add-on_repositories @@ https://archive.is/e8MOa
+:: URLref: http://kodi.wiki/view/HOW-TO:Create_a_repository_for_add-ons @@ https://archive.is/W6Ox1
 
 set __ME=%~n0
 set __ME_path=%~dp0.
@@ -34,17 +35,6 @@ set PREFIX=xbmc-
 if NOT DEFINED V ( set "V=%ID%" )
 call :$github_pull_and_process "%NAME%" "%ID%" "%V%" "%USER%" "%PREFIX%"
 if NOT "%ERRORLEVEL%" == "0" ( echo %__ME%: $github_pull_and_process failed & exit /b -1 )
-
-:::: Update skin.metropolis from github repo
-::set NAME=skin.metropolis
-::set ID=master
-::set V=2.6.9
-::set USER=rivy
-::set PREFIX=xbmc-
-:::
-::if NOT DEFINED V ( set "V=%ID%" )
-::call :$github_pull_and_process "%NAME%" "%ID%" "%V%" "%USER%" "%PREFIX%"
-::if NOT "%ERRORLEVEL%" == "0" ( echo %__ME%: $github_pull_and_process failed & exit /b -1 )
 
 ::
 
