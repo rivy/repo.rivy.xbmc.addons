@@ -4,4 +4,5 @@
 ::copy ..\plugin.video.wdrrockpalast\addon.xml plugin.video.wdrrockpalast
 ::copy ..\script.service.fritzbox\addon.xml script.service.fritzbox
 ::
-c:\python\python.exe addons_gen.py
+::c:\python\python.exe addons_gen.py
+python addons_gen.py
