@@ -35,16 +35,16 @@ if NOT DEFINED V ( set "V=%ID%" )
 call :$github_pull_and_process "%NAME%" "%ID%" "%V%" "%USER%" "%PREFIX%"
 if NOT "%ERRORLEVEL%" == "0" ( echo %__ME%: $github_pull_and_process failed & exit /b -1 )
 
-:: Update skin.metropolis from github repo
-set NAME=skin.metropolis
-set ID=master
-set V=2.6.9
-set USER=rivy
-set PREFIX=xbmc-
-:
-if NOT DEFINED V ( set "V=%ID%" )
-call :$github_pull_and_process "%NAME%" "%ID%" "%V%" "%USER%" "%PREFIX%"
-if NOT "%ERRORLEVEL%" == "0" ( echo %__ME%: $github_pull_and_process failed & exit /b -1 )
+:::: Update skin.metropolis from github repo
+::set NAME=skin.metropolis
+::set ID=master
+::set V=2.6.9
+::set USER=rivy
+::set PREFIX=xbmc-
+:::
+::if NOT DEFINED V ( set "V=%ID%" )
+::call :$github_pull_and_process "%NAME%" "%ID%" "%V%" "%USER%" "%PREFIX%"
+::if NOT "%ERRORLEVEL%" == "0" ( echo %__ME%: $github_pull_and_process failed & exit /b -1 )
 
 ::
 
